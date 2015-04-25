@@ -1,7 +1,7 @@
 # onionizer
 Onionize any web site without modifying its code
 
-You can make [Tor Hidden Service](https://www.torproject.org/docs/tor-hidden-service.html) with any web site without changing original site code. This is very simple proxy which receives request, replace onion hostname with original hostname and replace original hostname with onion at response. This happens also with headers (cookies, redirects, referrers...). Writen in [Go](https://golang.org/) with [goproxy](https://github.com/elazarl/goproxy).
+You can make [Tor Hidden Service](https://www.torproject.org/docs/tor-hidden-service.html) with any web site without changing original site code. This is very simple proxy which receives request, replaces onion hostname with original hostname, sends modified request to original site and replace original hostname with onion at response to client. This happens also with headers (cookies, redirects, referrers...). Writen in [Go](https://golang.org/) with [goproxy](https://github.com/elazarl/goproxy).
 
 ```
 Usage:
